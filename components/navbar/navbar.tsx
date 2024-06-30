@@ -1,4 +1,5 @@
-"use client";
+'use client'
+
 
 import { useState } from "react";
 import Logo from "./logo";
@@ -30,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({
   };
 
   return (
-    <div className="border-b py-2 md:py-0 px-4 md:px-6">
+    <div className="border-b py-2 md:py-0 px-4 md:px-6 mt-4"> {/* Added mt-4 for margin-top */}
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           <Logo />
@@ -47,7 +48,6 @@ const Navbar: React.FC<NavbarProps> = ({
             <>
               <Submit products={products} authenticatedUser={authenticatedUser} />
               <NotificationIcon notifications={notifications} />
-              <Avatar authenticatedUser={authenticatedUser} />
             </>
           ) : (
             <div
@@ -58,6 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <SignUpButton />
             </div>
           )}
+          <Avatar authenticatedUser={authenticatedUser} /> {/* Always show Avatar */}
         </div>
 
         <Modal visible={authModalVisible} setVisible={setAuthModalVisible}>

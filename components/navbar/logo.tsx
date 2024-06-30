@@ -9,8 +9,8 @@ const Logo = () => {
         <Image 
         src={'/logo/small-logo.png'} 
         alt="logo"
-        width={50}
-        height={50}
+        width={30}
+        height={30}
         className="p-1"
         />
      </Link>
@@ -19,8 +19,8 @@ const Logo = () => {
         <Image 
         src={'/logo/logo.png'} 
         alt="logo"
-        width={100}
-        height={100}
+        width={44}
+        height={44}
         />
      </Link>
 
